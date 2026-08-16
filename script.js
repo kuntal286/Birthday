@@ -193,11 +193,19 @@ btnOpen.addEventListener('click', () => {
         openingScreen.style.display = 'none';
         mainContent.style.display = 'block';
         if (musicEnabled && music) {
-            music.play().catch(() => {});
+    music.play()
+        .then(() => {
             musicPlaying = true;
             musicIcon.textContent = '🎵';
             musicLabel.textContent = 'Music On';
-        }
+        })
+        .catch((error) => {
+            console.error('Music could not start:', error);
+            musicPlaying = false;
+            musicIcon.textContent = '🔇';
+            musicLabel.textContent = 'Music Off';
+        });
+}
         launchConfetti();
         launchFireworks();
         createBalloons();
