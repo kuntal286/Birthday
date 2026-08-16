@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎂 Birthday Surprise</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">🎂 Surprise</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">🏠 Home</a></li>
+            <li><a href="#birthday">🎂 Birthday</a></li>
+            <li><a href="#memories">📸 Memories</a></li>
+            <li><a href="#message">💌 Message</a></li>
+            <li><a href="#surprise">🎁 Surprise</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- ========== MUSIC PLAYER ========== -->
+    <div class="music-player" id="musicPlayer">
+        <button id="musicToggle" aria-label="Toggle Music">
+            <span id="musicIcon">🔇</span>
+            <span id="musicLabel">Music Off</span>
+        </button>
+    </div>
+
+    <!-- ========== OPENING SCREEN ========== -->
+    <section class="opening-screen" id="openingScreen">
+        <canvas id="starCanvas"></canvas>
+        <div class="opening-content">
+            <p class="opening-line1">✨ I Made Something Special For You ✨</p>
+            <p class="opening-line2">Because today isn't just another day...</p>
+            <p class="opening-line3">Today is YOUR day! 🎂❤️</p>
+            <button class="btn-open" id="btnOpen">Open Your Birthday Surprise 🎁</button>
+        </div>
+    </section>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="main-content" id="mainContent" style="display:none;">
+
+        <!-- HOME -->
+        <section class="section home-section" id="home">
+            <div class="hero">
+                <h1 class="glow-text">🎉 HAPPY BIRTHDAY <span id="birthdayName">[NAME]</span> 🎂</h1>
+                <p class="hero-sub">May your special day be filled with happiness, love and unforgettable memories. ❤️</p>
+                <div class="hero-animations"></div>
+            </div>
+        </section>
+
+        <!-- CAKE -->
+        <section class="section cake-section" id="birthday">
+            <h2 class="section-title">🎂 Make a Wish... ✨</h2>
+            <div class="cake-container">
+                <div class="cake" id="cake">
+                    <div class="cake-layer layer1"></div>
+                    <div class="cake-layer layer2"></div>
+                    <div class="cake-layer layer3"></div>
+                    <div class="frosting"></div>
+                    <div class="candles">
+                        <div class="candle" data-index="0"><div class="flame" data-lit="true"></div></div>
+                        <div class="candle" data-index="1"><div class="flame" data-lit="true"></div></div>
+                        <div class="candle" data-index="2"><div class="flame" data-lit="true"></div></div>
+                        <div class="candle" data-index="3"><div class="flame" data-lit="true"></div></div>
+                    </div>
+                    <div class="smoke-container" id="smokeContainer"></div>
+                </div>
+                <p class="wish-status" id="wishStatus">Click each candle to make a wish! 🕯️</p>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section class="section gallery-section" id="memories">
+            <h2 class="section-title">📸 Our Memories</h2>
+            <div class="gallery-grid" id="galleryGrid"></div>
+        </section>
+
+        <!-- TIMELINE -->
+        <section class="section timeline-section" id="timeline">
+            <h2 class="section-title">❤️ Our Beautiful Memories</h2>
+            <div class="timeline" id="timelineContainer"></div>
+        </section>
+
+        <!-- LETTER -->
+        <section class="section letter-section" id="message">
+            <h2 class="section-title">💌 A Little Birthday Message For You</h2>
+            <div class="letter-card">
+                <div class="letter-paper">
+                    <div class="letter-content" id="letterContent"></div>
+                    <div class="letter-decorations">
+                        <span class="heart-sparkle">❤️</span>
+                        <span class="heart-sparkle">✨</span>
+                        <span class="heart-sparkle">💫</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COUNTDOWN -->
+        <section class="section countdown-section" id="countdown">
+            <h2 class="section-title">⏰ Counting Down To Your Special Day ❤️</h2>
+            <div class="countdown-grid" id="countdownGrid">
+                <div class="countdown-item"><span id="cdDays">00</span><label>Days</label></div>
+                <div class="countdown-item"><span id="cdHours">00</span><label>Hours</label></div>
+                <div class="countdown-item"><span id="cdMinutes">00</span><label>Minutes</label></div>
+                <div class="countdown-item"><span id="cdSeconds">00</span><label>Seconds</label></div>
+            </div>
+            <div class="countdown-message" id="countdownMessage"></div>
+        </section>
+
+        <!-- SURPRISE -->
+        <section class="section surprise-section" id="surprise">
+            <h2 class="section-title">👀 Wait... I Have One More Surprise For You</h2>
+            <button class="btn-surprise" id="btnSurprise">Open Final Surprise 🎁</button>
+        </section>
+
+    </main>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <button class="lb-close" id="lbClose">&times;</button>
+        <button class="lb-prev" id="lbPrev">&#10094;</button>
+        <button class="lb-next" id="lbNext">&#10095;</button>
+        <div class="lb-content">
+            <img src="" alt="Gallery image" id="lbImage" />
+            <div class="lb-counter" id="lbCounter"></div>
+        </div>
+    </div>
+
+    <!-- FINAL OVERLAY -->
+    <div class="final-overlay" id="finalOverlay">
+        <div class="final-content">
+            <h1 class="final-title">Happy Birthday, <span id="finalName">[NAME]</span> ❤️</h1>
+            <p class="final-message">
+                May your life always be filled with happiness,<br />
+                beautiful memories, success and endless reasons to smile.<br /><br />
+                Keep smiling.<br />
+                Keep shining.<br />
+                And always be the amazing person you are. ✨<br /><br />
+                Happy Birthday Once Again! 🎂❤️
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
