@@ -7,27 +7,26 @@ const birthdayConfig = {
     birthdayDate: "2026-08-17T00:00:00",    // 17th August – tomorrow!
     music: "assets/music/Birthday-music.mp3",
     
-    // Photo Gallery – each memory with a loving caption
-    gallery: [
+   gallery: [
     {
-        title: "Yellow Saree, Golden Smile 💛",
-        desc: "A traditional beauty with a smile that makes every moment brighter."
+        title: "Softness in Simplicity 🌸",
+        desc: "A quiet moment, a gentle smile, and a beauty that never needs an explanation."
     },
     {
-        title: "Grace in Every Moment 🌸",
-        desc: "Simple, beautiful, and effortlessly graceful—just the way you are."
+        title: "Tradition & Grace 🪷",
+        desc: "Dressed in tradition, surrounded by timeless beauty, and carrying a grace that is uniquely yours."
     },
     {
-        title: "Sunshine & Shades ☀️😎",
-        desc: "A little sunshine, a little attitude, and a whole lot of beauty."
+        title: "Sunshine & Confidence ☀️😎",
+        desc: "A little sunshine, a confident smile, and that effortless charm that makes you impossible to forget."
     },
     {
-        title: "Elegance in Red ❤️",
-        desc: "Wrapped in red, surrounded by nature, and looking absolutely beautiful."
+        title: "Together, We Bloom 💕",
+        desc: "Two hearts, one beautiful moment, and a memory I will always keep close to my heart."
     },
     {
-        title: "A Beautiful Traditional Moment 🪷",
-        desc: "A picture filled with culture, innocence, and a beauty that feels timeless."
+        title: "Under the Lights With You ✨❤️",
+        desc: "Among the lights and celebrations, having you beside me made the night truly unforgettable."
     }
 ],
     
@@ -41,7 +40,7 @@ const birthdayConfig = {
     ],
     
     // Birthday Letter – A heartfelt, handwritten-style message
-    letter: "My Dearest Anju,\n\nThey say that some people come into our lives like a gentle breeze, changing everything without making a sound. That is exactly what you did to me.\n\nEvery single day with you feels like a gift. Your kindness, your strength, your beautiful soul – they inspire me to be the best version of myself. When I look at you, I see not just my girlfriend, but my best friend, my partner, and my home.\n\nToday, on your birthday, I want you to know that you are celebrated, cherished, and deeply loved – not just today, but every single moment of every single day.\n\nMay this new year of your life bring you everything you have ever wished for. May your heart always be full of joy, your days full of sunshine, and your nights full of peaceful dreams.\n\nAnd remember, no matter where life takes us, I will always be right here – loving you, cheering for you, and holding your hand through it all.\n\nHappy Birthday, my Anju. You are my forever. 💌\n\nWith all my love, always,\n[Your Name] ❤️"
+    letter: "My Dearest Anju,\n\nThey say that some people come into our lives like a gentle breeze, changing everything without making a sound. That is exactly what you did to me.\n\nEvery single day with you feels like a gift. Your kindness, your strength, your beautiful soul – they inspire me to be the best version of myself. When I look at you, I see not just my girlfriend, but my best friend, my partner, and my home.\n\nToday, on your birthday, I want you to know that you are celebrated, cherished, and deeply loved – not just today, but every single moment of every single day.\n\nMay this new year of your life bring you everything you have ever wished for. May your heart always be full of joy, your days full of sunshine, and your nights full of peaceful dreams.\n\nAnd remember, no matter where life takes us, I will always be right here – loving you, cheering for you, and holding your hand through it all.\n\nHappy Birthday, my Anju. You are my forever.i love you. 💌\n\nWith all my love, always,\nVutu ❤️"
 };
 
 // (Everything below is the engine – do not change unless you know what you're doing)
