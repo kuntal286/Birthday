@@ -5,7 +5,7 @@ const birthdayConfig = {
     name: "Anjali",                         // Her full name
     nickname: "Anju",                       // Her nickname
     birthdayDate: "2026-08-17T00:00:00",    // 17th August – tomorrow!
-    music: "assets/music/birthday-music.mp3",
+    music: "assets/music/Birthday-music.mp3",
     
     // Photo Gallery – each memory with a loving caption
     gallery: [
