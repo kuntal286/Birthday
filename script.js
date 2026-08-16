@@ -9,20 +9,35 @@ const birthdayConfig = {
     
     // Photo Gallery – each memory with a loving caption
     gallery: [
-        { title: "Your Smile 💖", desc: "The most beautiful smile that lights up my entire world." },
-        { title: "Every Moment 🌸", desc: "Every second with you feels like a dream I never want to wake up from." },
-        { title: "My Sunshine ☀️", desc: "You are the warmth that makes my darkest days bright." },
-        { title: "Forever & Always 💕", desc: "In your eyes, I found my home. In your heart, I found my peace." },
-        { title: "My Everything 🌹", desc: "You are not just my love – you are my reason to be a better person every day." }
-    ],
+    {
+        title: "Yellow Saree, Golden Smile 💛",
+        desc: "A traditional beauty with a smile that makes every moment brighter."
+    },
+    {
+        title: "Grace in Every Moment 🌸",
+        desc: "Simple, beautiful, and effortlessly graceful—just the way you are."
+    },
+    {
+        title: "Sunshine & Shades ☀️😎",
+        desc: "A little sunshine, a little attitude, and a whole lot of beauty."
+    },
+    {
+        title: "Elegance in Red ❤️",
+        desc: "Wrapped in red, surrounded by nature, and looking absolutely beautiful."
+    },
+    {
+        title: "A Beautiful Traditional Moment 🪷",
+        desc: "A picture filled with culture, innocence, and a beauty that feels timeless."
+    }
+],
     
     // Memory Timeline – beautiful stories about your journey
     timeline: [
-        { date: "Aug 2024", title: "The Day My World Changed", desc: "The first time I saw you, I knew my life would never be the same. You walked in, and suddenly everything made sense. ❤️", img: "assets/images/photo1.jpeg" },
-        { date: "Oct 2024", title: "Stolen Sunsets", desc: "Watching the sunset with you is my favorite thing. The sky turns orange and pink, but nothing is as beautiful as you. 🌅", img: "assets/images/photo2.jpeg" },
-        { date: "Dec 2024", title: "Cozy Winters", desc: "Cold nights, warm hugs, and your laughter filling the room – that's my definition of heaven. 🤗", img: "assets/images/photo3.jpeg" },
-        { date: "Mar 2025", title: "A New Beginning", desc: "Spring came, and so did our love – blooming, growing, and becoming more beautiful with every passing day. 🌸", img: "assets/images/photo4.jpeg" },
-        { date: "Jun 2025", title: "Unforgettable Summer", desc: "Late night talks, endless laughter, and a love so deep that I forgot where I ended and you began. ☀️", img: "assets/images/photo5.jpeg" }
+        {  title: "", desc: "The first time I saw you, I knew my life would never be the same. You walked in, and suddenly everything made sense. ❤️", img: "assets/images/photo2.jpeg" },
+        { title: "Stolen Sunsets", desc: "Watching the sunset with you is my favorite thing. The sky turns orange and pink, but nothing is as beautiful as you. 🌅", img: "assets/images/photo5.jpeg" },
+        {  title: "Cozy Winters", desc: "Cold nights, warm hugs, and your laughter filling the room – that's my definition of heaven. 🤗", img: "assets/images/photo6.jpeg" },
+        {  title: "A New Beginning", desc: "Spring came, and so did our love – blooming, growing, and becoming more beautiful with every passing day. 🌸", img: "assets/images/photo9.jpeg" },
+        {  title: "Unforgettable Summer", desc: "Late night talks, endless laughter, and a love so deep that I forgot where I ended and you began. ☀️", img: "assets/images/photo11.jpeg" }
     ],
     
     // Birthday Letter – A heartfelt, handwritten-style message
@@ -379,11 +394,11 @@ candles.forEach(candle => {
 // ============================================================
 function initGallery() {
     const images = [
-        'assets/images/photo1.jpeg',
         'assets/images/photo2.jpeg',
-        'assets/images/photo3.jpeg',
-        'assets/images/photo4.jpeg',
-        'assets/images/photo5.jpeg'
+        'assets/images/photo5.jpeg',
+        'assets/images/photo6.jpeg',
+        'assets/images/photo9.jpeg',
+        'assets/images/photo11.jpeg'
     ];
     const emojis = ['❤️', '🌟', '🎂', '💫', '🎉'];
     const captions = birthdayConfig.gallery;
